@@ -1,9 +1,87 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Summary</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f5f5f7;
+  }
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+  }
+  .summary {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .summary h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .installment-selector, .initial-payment, .flex-payment {
+    margin-top: 20px;
+  }
+  .initial-payment input {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    border: none;
+    margin-top: 10px;
+  }
+  .button {
+    background-color: #6200ee;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  @media (max-width: 600px) {
+    .container {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+</style>
 </head>
 <body>
-  <h1>asia</h1>
+
+<div class="container">
+  <div class="summary">
+    <h2>Tu resumen es de $627.716,13</h2>
+    <p>¿cómo querés pagarlo?</p>
+  </div>
+  <div class="installment-selector">
+    <!-- Insert installment selector buttons here -->
+  </div>
+  <div class="initial-payment">
+    <label for="initial-payment">Ingresá tu pago inicial de este mes</label>
+    <input type="text" id="initial-payment" value="$434900" />
+    <small>Pago mínimo de $434.900 o más</small>
+  </div>
+  <div class="flex-payment">
+    <div>
+      Pago Flex en 12
+    </div>
+    <div>
+      $434.900 y 11 cuotas de $24.344,96
+    </div>
+  </div>
+  <a href="#" class="button">Continuar</a>
+</div>
+
 </body>
 </html>
